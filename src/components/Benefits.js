@@ -25,7 +25,7 @@ function Benefits() {
           {/* Image Column */}
           <div className="col-12 col-lg-4">
             <img
-              src="assets/cookie_packaging.png"
+              src="/assets/cookie_packaging.png"
               alt="Sample Cookie"
               className="img-fluid"
               style={{ width: "100%", height: "auto", borderRadius: "12px" }}

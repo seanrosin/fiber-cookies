@@ -29,7 +29,7 @@ function Home() {
             {/* Image Column */}
             <div className="col-12 col-lg-4">
               <img
-                src="fiber-cookies/assets/cookie_packaging.png"
+                src="/assets/cookie_packaging.png"
                 alt="Fiber Cookie Logo"
                 className="img-fluid"
                 style={{ width: "100%", height: "auto" }}

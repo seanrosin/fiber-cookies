@@ -4,13 +4,13 @@ function Navbar() {
       <div className="container-fluid">
         <a className="navbar-brand d-flex align-items-center" href="#">
           <img
-            src="fiber-cookies/assets/gut_fiber_logo.png"
+            src="/assets/gut_fiber_logo.png"
             alt="Cookie Logo"
             width="50"
             style={{ marginRight: "10px" }}
           />
           <img
-            src="fiber-cookies/assets/fiber_cookies.png"
+            src="/assets/fiber_cookies.png"
             alt="FiberCookies"
             width="160"
           />
