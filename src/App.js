@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootswatch/dist/brite/bootstrap.min.css';
+import Navbar from "./components/Navbar";
+import Home from './components/Home.js';
+import Benefits from './components/Benefits.js';
+import Modal from "./components/ReserveModal.js";
+import { useRef, useEffect } from "react";
 
 function App() {
+  const modalRef = useRef();
+
+  useEffect(() => {
+    if (!window.bootstrap) return;
+    modalRef.current = new window.bootstrap.Modal(document.getElementById("reserveModal"));
+  }, []);
+
+  const handleSubmit = () => {
+    const email = document.getElementById("waitlistEmail").value.trim();
+    console.log("Submitted email:", email);
+    modalRef.current?.hide();
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Home />
+      <Benefits />
+      {/* <Hero onReserveClick={() => modalRef.current?.show()} /> */}
+      <Modal onSubmit={handleSubmit} />
+    </>
   );
 }
 
