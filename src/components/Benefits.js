@@ -2,14 +2,24 @@ import React from "react";
 
 function Benefits() {
   return (
-    <section
-      id="benefits"
-      className="container-fluid py-5"
-      style={{ backgroundColor: "#f0f4e3" }} // soft green background
-    >
+    <section id="benefits" className="container-fluid py-5 bg-secondary">
       <div className="container">
         <div className="row justify-content-center align-items-center text-center text-lg-start">
           
+
+          {/* Image Column */}
+          <div className="col-12 col-lg-4">
+            <img
+              src="/assets/discomfort.png"
+              alt="Sample Cookie"
+              className="img-fluid"
+              style={{ width: "75%", height: "auto", borderRadius: "12px" }}
+            />
+          </div>
+
+
+
+
           {/* Text Column */}
           <div className="col-12 col-lg-6 mb-2 mb-lg-0">
             <h2 className="text-primary">Benefits of FiberCookies</h2>
@@ -22,15 +32,7 @@ function Benefits() {
             </p>
           </div>
 
-          {/* Image Column */}
-          <div className="col-12 col-lg-4">
-            <img
-              src="/assets/cookie_packaging.png"
-              alt="Sample Cookie"
-              className="img-fluid"
-              style={{ width: "100%", height: "auto", borderRadius: "12px" }}
-            />
-          </div>
+          
         </div>
       </div>
     </section>

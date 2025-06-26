@@ -2,55 +2,62 @@ import React from "react";
 
 function Home() {
   return (
-    <>
-      <div className="container mt-3 text-center">
-        <h1 className="text-dark">FiberCookies</h1>
-        <h3 className="text-success">Not your Grandma's Fiber!</h3>
-      </div>
-
-      <section id="main" className="container-fluid py-3">
+    <div style={{ backgroundColor: "#fff9e1" }}>
+      <section id="main" className="container-fluid py-5">
         <div className="container">
-          <div className="row justify-content-center align-items-center text-center text-lg-start">
-            {/* Text Column */}
-            <div className="col-12 col-lg-6 mb-2 mb-lg-0">
-              <p className="lead">
-                Let’s be real — most fiber supplements suck.
-                <br />
-                They come in clumpy orange drinks, taste like regret, and leave you wondering if you’re about to shit your pants.
-                <br /><br />
-                We made something better: a cookie.
-                <br /><br />
-                A damn good one. Full of gut-friendly fiber that actually tastes amazing—and works with your body, not against it.
-                <br />
-                No bloated starts. No bathroom emergencies. Just a daily cookie ritual that keeps things smooth, steady, and sustainable.
+          <div className="row align-items-center">
+
+            {/* Hero Text Column */}
+            <div className="col-12 col-lg-6 text-black px-4 text-center text-lg-start">
+              
+              
+              {/* Review Line
+              <div className="mb-3 small d-flex justify-content-center justify-content-lg-start align-items-center gap-2">
+                <span className="text-warning">★★★★★</span>
+                <span>10,000+ Happy Guts (4.7/5 rating)</span>
+              </div> */}
+
+              {/* Headline */}
+              <h1 className="fw-bold display-5">
+                Not Your Grandma’s Fiber<br />
+                <span style={{ color: '#fcd34d' }}>Tastes Like a Cookie</span>
+              </h1>
+
+              {/* Supporting Description */}
+              <p className="lead mt-3" style={{ maxWidth: "600px" }}>
+                Most fiber supplements suck. Orange dust. Weird texture. Bloating. <br />
+                That’s why we baked something better: a soft, chewy cookie that supports gut health — without the side effects.
               </p>
-            </div>
 
-            {/* Image Column */}
-            <div className="col-12 col-lg-4">
-              <img
-                src="/assets/cookie_packaging.png"
-                alt="Fiber Cookie Logo"
-                className="img-fluid"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
 
-            {/* Call to Action */}
-            <div className="container mt-3 text-center">
-              <h1 className="text-info">Join our Fiber Fam!</h1>
+              <h1 className="fw-bold display-10" style={{ color: '#64e3c5' }}>
+                Join our Fiber Fam!
+              </h1>
+
+              {/* CTA */}
               <button
-                className="btn btn-success mt-3"
+                className="btn btn-light btn-lg mt-4 fw-semibold"
                 data-bs-toggle="modal"
                 data-bs-target="#reserveModal"
               >
-                Reserve Your Cookies
+                Reserve Your Cookies →
               </button>
             </div>
+
+            {/* Image Column */}
+            <div className="col-12 col-lg-6 px-0 text-center">
+              <img
+                src="/assets/cookie_packaging_4.png"
+                alt="Fiber Cookie Logo"
+                className="img-fluid"
+                style={{ maxHeight: "75vh", width: "auto" }}
+              />
+            </div>
+
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

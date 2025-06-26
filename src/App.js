@@ -23,8 +23,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <Benefits />
-      {/* <Hero onReserveClick={() => modalRef.current?.show()} /> */}
+      {/* <Benefits /> */}
       <Modal onSubmit={handleSubmit} />
     </>
   );
