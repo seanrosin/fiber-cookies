@@ -23,7 +23,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      {/* <Benefits /> */}
+      <Benefits />
       <Modal onSubmit={handleSubmit} />
     </>
   );

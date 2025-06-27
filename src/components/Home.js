@@ -8,11 +8,10 @@ function Home() {
           <div className="row align-items-center">
 
             {/* Hero Text Column */}
-            <div className="col-12 col-lg-6 text-black px-4 text-center text-lg-start">
+            <div className="col-12 col-lg-6 text-black px-4 text-lg-start">
               
-              
-              {/* Review Line
-              <div className="mb-3 small d-flex justify-content-center justify-content-lg-start align-items-center gap-2">
+              {/* Review Line */}
+              {/* <div className="mb-3 small d-flex justify-content-center justify-content-lg-start align-items-center gap-2">
                 <span className="text-warning">★★★★★</span>
                 <span>10,000+ Happy Guts (4.7/5 rating)</span>
               </div> */}
@@ -29,10 +28,9 @@ function Home() {
                 That’s why we baked something better: a soft, chewy cookie that supports gut health — without the side effects.
               </p>
 
-
-              <h1 className="fw-bold display-10" style={{ color: '#64e3c5' }}>
+              <h2 className="fw-bold display-10" style={{ color: '#64e3c5' }}>
                 Join our Fiber Fam!
-              </h1>
+              </h2>
 
               {/* CTA */}
               <button
