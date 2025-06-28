@@ -3,7 +3,7 @@ import BenefitsTable from "./BenefitsTable";
 
 function Benefits() {
   return (
-    <section id="benefits" className="container-fluid py-5 bg-secondary mt-lg-5">
+    <section id="benefits" className="container-fluid py-5 bg-secondary mt-lg-2">
       <div className="container">
         <div className="row justify-content-center align-items-center">
           
@@ -33,7 +33,7 @@ function Benefits() {
               You wouldn’t wear jeans without checking the mirror, would you?               
             </p>
 
-            {/* <BenefitsTable /> */}
+            <BenefitsTable />
 
           </div>
         </div>

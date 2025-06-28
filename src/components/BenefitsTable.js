@@ -1,37 +1,85 @@
 import React from "react";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function BenefitsTable() {
   return (
     <div className="container my-5">
-      <div className="row justify-content-center align-items-start">
+      <div className="row g-4 justify-content-center align-items-start">
         
         {/* Left Column – Symptoms */}
         <div className="col-12 col-md-6 mb-4">
-          <div className="p-4">
-            <div>
-              Heaviness in your gut<br />
-              Constipation<br />
-              Imbalanced gut microbiota<br />
-              Difficulty in losing weight<br />
-              Lack of energy<br />
-              Risk of bloating
-            </div>
-          </div>
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-x-circle-fill text-dark fs-4"></i>
+            <span>Heaviness in your gut</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #ccc", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-x-circle-fill text-dark fs-4"></i>
+            <span>Constipation</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #ccc", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-x-circle-fill text-dark fs-4"></i>
+            <span>Imbalanced gut microbiota</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #ccc", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-x-circle-fill text-dark fs-4"></i>
+            <span>Difficulty in losing weight</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #ccc", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-x-circle-fill text-dark fs-4"></i>
+            <span>Lack of energy</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #ccc", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-x-circle-fill text-dark fs-4"></i>
+            <span>Risk of bloating</span>
+          </p>
         </div>
 
         {/* Right Column – Benefits */}
-        <div className="col-12 col-md-6 mb-4">
-          <div className="p-4 border rounded bg-light">
-            <h5 className="mb-3">✅ Benefits of Daily Fiber</h5>
-            <div>
-              Lighter, more comfortable gut<br />
-              Regular digestion<br />
-              Healthier gut microbiome<br />
-              Easier weight management<br />
-              More consistent energy<br />
-              Reduced bloating
-            </div>
-          </div>
+        <div className="col-12 col-md-6 mb-4 bg-success rounded">
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-check-circle-fill text-dark fs-4"></i>
+            <span className="text-white">Lightness in your gut</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #fff", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-check-circle-fill text-dark fs-4"></i>
+            <span className="text-white">Regular bowel movements</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #fff", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-check-circle-fill text-dark fs-4"></i>
+            <span className="text-white">Promotes gut health</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #fff", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-check-circle-fill text-dark fs-4"></i>
+            <span className="text-white">Better weight management</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #fff", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-check-circle-fill text-dark fs-4"></i>
+            <span className="text-white">Well balanced gut microbiota</span>
+          </p>
+          <div style={{ borderBottom: "1px solid #fff", marginTop: "2px" }}></div>
+
+          <p className="mt-2 d-flex align-items-center gap-2 fs-6">
+            <i className="bi bi-check-circle-fill text-dark fs-4"></i>
+            <span className="text-white">Improved digestive system</span>
+          </p>
         </div>
 
       </div>
